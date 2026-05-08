@@ -854,35 +854,21 @@ body {
    Responsive
    ---------------------------------------- */
 @media (max-width: 900px) {
-  :root {
-    --nav-w: 160px;
-  }
+  :root { --nav-w: 160px; }
 
-  .terminal {
-    padding: 32px 28px 120px;
-  }
+  .terminal { padding: 32px 28px 120px; }
 
-  .ascii-art pre {
-    font-size: 0.5rem;
-  }
+  .ascii-art pre { font-size: 0.5rem; }
+
+  .json-block { max-width: 100%; }
+
+  .ls-output,
+  .git-log,
+  .contact-block { max-width: 100%; }
 }
 
 @media (max-width: 700px) {
-  .chat-btn {
-    bottom: 60px;
-    right: 16px;
-    width: 48px;
-    height: 48px;
-    font-size: 0.85rem;
-  }
-
-  .chat-window {
-    bottom: 118px;
-    right: 10px;
-    left: 10px;
-    width: auto;
-    height: 400px;
-  }
+  /* ── Bottom tab nav ── */
   .cmd-nav {
     position: fixed;
     top: auto;
@@ -898,6 +884,7 @@ body {
     border-right: none;
     border-top: 1px solid var(--border);
     z-index: 200;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-label { display: none; }
@@ -905,7 +892,7 @@ body {
   .nav-cmd {
     white-space: nowrap;
     padding: 12px 14px;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     border-left: none;
     border-bottom: 2px solid transparent;
     flex-shrink: 0;
@@ -916,35 +903,79 @@ body {
     border-bottom-color: var(--green);
   }
 
+  /* ── Terminal body ── */
   .terminal {
     margin-left: 0;
-    padding: 28px 20px 100px;
+    padding: 24px 16px 110px;
   }
 
-  .hero-text .hi { font-size: 1.2rem; }
+  .output { padding-left: 12px; }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+  /* ── Hero ── */
+  .hero-text .hi { font-size: 1.15rem; }
 
-  .ascii-art pre {
-    font-size: 0.42rem;
-  }
+  .ascii-art pre { font-size: 0.38rem; }
 
   .hero-status {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
+
+  /* ── JSON block ── */
+  .json-block { padding: 14px 16px; overflow-x: auto; }
+
+  .json-line {
+    white-space: pre-wrap;
+    word-break: break-all;
+    font-size: 0.78rem;
+  }
+
+  /* ── Projects ── */
+  .projects-grid { grid-template-columns: 1fr; }
+
+  /* ── Contact ── */
+  .contact-item { flex-direction: column; gap: 4px; }
+
+  .contact-label { min-width: unset; }
+
+  /* ── Chat ── */
+  .chat-btn {
+    bottom: 68px;
+    right: 16px;
+    width: 46px;
+    height: 46px;
+    font-size: 0.85rem;
+  }
+
+  .chat-window {
+    bottom: 120px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    height: 380px;
+  }
 }
 
 @media (max-width: 480px) {
-  html { font-size: 13px; }
+  html { font-size: 12px; }
 
-  .terminal-title { font-size: 0.7rem; }
+  .terminal-title { font-size: 0.68rem; letter-spacing: 0; }
   .terminal-bar-spacer { display: none; }
 
-  .prompt {
-    font-size: 0.78rem;
-  }
+  .prompt { font-size: 0.75rem; }
+
+  .ascii-art pre { font-size: 0.32rem; }
+
+  .hero-text .hi { font-size: 1rem; }
+
+  .block { margin-bottom: 48px; }
+
+  .commit { padding: 14px 16px; }
+
+  .ls-items { padding-left: 8px; gap: 6px; }
+
+  .project-card { padding: 16px; }
+
+  .output { padding-left: 8px; }
 }
