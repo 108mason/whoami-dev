@@ -296,7 +296,8 @@ body {
 
 .json-line {
   line-height: 1.8;
-  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-word;
   font-size: 0.85rem;
 }
 
@@ -923,13 +924,7 @@ body {
   }
 
   /* ── JSON block ── */
-  .json-block { padding: 14px 16px; overflow-x: auto; }
-
-  .json-line {
-    white-space: pre-wrap;
-    word-break: break-all;
-    font-size: 0.78rem;
-  }
+  .json-block { padding: 14px 16px; }
 
   /* ── Projects ── */
   .projects-grid { grid-template-columns: 1fr; }
