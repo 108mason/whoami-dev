@@ -568,6 +568,17 @@ body {
   content: "★ ";
 }
 
+.proj-private {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.03em;
+}
+
+.proj-private::before {
+  content: "🔒 ";
+  filter: grayscale(1) opacity(0.7);
+}
+
 /* ----------------------------------------
    Contact Section
    ---------------------------------------- */
