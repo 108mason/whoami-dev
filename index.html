@@ -352,103 +352,20 @@
         <span class="prompt">guest@portfolio:~$</span>
         <span class="cmd-text typed" data-text="find ./projects -type f -name '*.cool'"></span>
       </div>
-      <div class="output projects-grid">
+      <div class="output projects-output">
 
-        <div class="project-card">
-          <div class="project-path">./projects/codesync/</div>
-          <div class="project-name">CodeSync</div>
-          <div class="project-desc">Real-time collaborative code editor with WebSocket sync</div>
-          <div class="project-stack">
-            <span class="stack-tag">React</span>
-            <span class="stack-tag">Socket.io</span>
-            <span class="stack-tag">Monaco</span>
-            <span class="stack-tag">Redis</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-            <a href="#" class="proj-link">live</a>
-            <span class="proj-stars">342</span>
-          </div>
+      <div class="project-category">
+        <div class="category-head">
+          <span class="category-name">ai · content automation</span>
+          <span class="category-count">5</span>
         </div>
+        <div class="projects-grid">
 
         <div class="project-card">
-          <div class="project-path">./projects/devflow/</div>
-          <div class="project-name">DevFlow</div>
-          <div class="project-desc">CLI toolkit for automating repetitive dev tasks</div>
-          <div class="project-stack">
-            <span class="stack-tag">Node.js</span>
-            <span class="stack-tag">Commander.js</span>
-            <span class="stack-tag">Shell</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-            <a href="#" class="proj-link">npm</a>
-            <span class="proj-stars">128</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/commitgpt/</div>
-          <div class="project-name">CommitGPT</div>
-          <div class="project-desc">AI that writes your commit messages from diffs</div>
-          <div class="project-stack">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">OpenAI</span>
-            <span class="stack-tag">Git hooks</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-            <span class="proj-stars">87</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/fullstack-automation/</div>
-          <div class="project-name">FullStack Automation</div>
-          <div class="project-desc">Modular test automation framework covering web, mobile, desktop, API, and DB — with reporting, visual testing, and CI support</div>
-          <div class="project-stack">
-            <span class="stack-tag">Java</span>
-            <span class="stack-tag">Selenium</span>
-            <span class="stack-tag">Appium</span>
-            <span class="stack-tag">TestNG</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/108mason/FullStackAutomationProject" target="_blank" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/memegenerator/</div>
-          <div class="project-name">MemeGenerator</div>
-          <div class="project-desc">Generates memes with custom text overlaid on images</div>
-          <div class="project-stack">
-            <span class="stack-tag">JavaScript</span>
-            <span class="stack-tag">HTML/CSS</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/108mason/memegenerator" target="_blank" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/keshava/</div>
-          <div class="project-name">Keshava</div>
-          <div class="project-desc">Task manager & calendar app with auth, notes, and a system monitor — installable as a PWA</div>
-          <div class="project-stack">
-            <span class="stack-tag">JavaScript</span>
-            <span class="stack-tag">HTML/CSS</span>
-            <span class="stack-tag">Firebase</span>
-            <span class="stack-tag">PWA</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/108mason/todo-list" target="_blank" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/narrify.svg" alt="Narrify preview" loading="lazy" /></div>
           <div class="project-path">./projects/narrify/</div>
           <div class="project-name">Narrify</div>
-          <div class="project-desc">Reddit → YouTube automation pipeline — scrapes viral posts, scores them with AI, generates cinematic scripts via Claude, voices with ElevenLabs, and publishes to YouTube, TikTok & Instagram</div>
+          <div class="project-desc">Reddit → YouTube automation pipeline — scrapes viral posts, scores them with AI, generates cinematic scripts via Claude, voices with ElevenLabs, and publishes to YouTube, TikTok &amp; Instagram</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">Claude API</span>
@@ -462,6 +379,7 @@
         </div>
 
         <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/blogengine.svg" alt="BlogEngine preview" loading="lazy" /></div>
           <div class="project-path">./projects/blogengine/</div>
           <div class="project-name">BlogEngine</div>
           <div class="project-desc">Zero-cost automated blog — GitHub Actions fetches RSS feeds, scores articles by relevance, and uses Claude to generate full posts, committing directly to GitHub Pages</div>
@@ -477,6 +395,103 @@
         </div>
 
         <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/finance-pipeline.svg" alt="Finance Video Pipeline preview" loading="lazy" /></div>
+          <div class="project-path">./projects/finance-pipeline/</div>
+          <div class="project-name">Finance Video Pipeline</div>
+          <div class="project-desc">Fully automated pipeline that picks a finance topic, writes a script via Claude, generates voiceover, renders charts, assembles an MP4, and publishes to YouTube — ~$0.08 per video</div>
+          <div class="project-stack">
+            <span class="stack-tag">AWS Step Functions</span>
+            <span class="stack-tag">Bedrock</span>
+            <span class="stack-tag">Lambda</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">React</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/kids-pipeline.svg" alt="Kids Video Pipeline preview" loading="lazy" /></div>
+          <div class="project-path">./projects/kids-pipeline/</div>
+          <div class="project-name">Kids Video Pipeline</div>
+          <div class="project-desc">Automated kids content pipeline — Claude generates character-consistent scripts and scene descriptions, Gemini Imagen 4 renders portrait visuals, Polly narrates with Ivy voice, Ken Burns animations add motion, and background music is mixed in. Outputs TikTok/Instagram (portrait) + YouTube (landscape) simultaneously.</div>
+          <div class="project-stack">
+            <span class="stack-tag">AWS Step Functions</span>
+            <span class="stack-tag">Bedrock</span>
+            <span class="stack-tag">Lambda</span>
+            <span class="stack-tag">Gemini Imagen</span>
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">React</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/multisocial.svg" alt="MultiSocial preview" loading="lazy" /></div>
+          <div class="project-path">./projects/multisocial/</div>
+          <div class="project-name">MultiSocial</div>
+          <div class="project-desc">Social media management dashboard with post scheduling, draft &amp; approval workflow, analytics, and calendar view</div>
+          <div class="project-stack">
+            <span class="stack-tag">Next.js</span>
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">Supabase</span>
+            <span class="stack-tag">Tailwind</span>
+            <span class="stack-tag">Twitter API</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="project-category">
+        <div class="category-head">
+          <span class="category-name">trading · arbitrage bots</span>
+          <span class="category-count">3</span>
+        </div>
+        <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/atbot.svg" alt="aTBOT preview" loading="lazy" /></div>
+          <div class="project-path">./projects/atbot/</div>
+          <div class="project-name">aTBOT</div>
+          <div class="project-desc">Triangular arbitrage bot scanning KuCoin, Gate.io, BitMart &amp; Binance for cross-exchange price gaps — with a Flask dashboard, SQLite trade log, and paper/live mode toggle</div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Flask</span>
+            <span class="stack-tag">SQLite</span>
+            <span class="stack-tag">AWS EC2</span>
+            <span class="stack-tag">PM2</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/polymarket-bot.svg" alt="PolyMarket Bot preview" loading="lazy" /></div>
+          <div class="project-path">./projects/polymarket-bot/</div>
+          <div class="project-name">PolyMarket Bot</div>
+          <div class="project-desc">Automated copy-trading bot for Polymarket — scans leaderboard, tracks top traders' positions, and mirrors their trades via the CLOB API</div>
+          <div class="project-stack">
+            <span class="stack-tag">TypeScript</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">viem</span>
+            <span class="stack-tag">AWS EC2</span>
+            <span class="stack-tag">PM2</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/flipflop.svg" alt="FlipFlop preview" loading="lazy" /></div>
           <div class="project-path">./projects/flipflop/</div>
           <div class="project-name">FlipFlop</div>
           <div class="project-desc">Mobile-first resale arbitrage dashboard — scrapes Kleinanzeigen listings, compares against eBay sold prices, ranks deals by profit score, and fires Telegram alerts on hot finds</div>
@@ -492,7 +507,18 @@
           </div>
         </div>
 
+        </div>
+      </div>
+
+      <div class="project-category">
+        <div class="category-head">
+          <span class="category-name">full-stack web apps</span>
+          <span class="category-count">3</span>
+        </div>
+        <div class="projects-grid">
+
         <div class="project-card">
+          <div class="project-thumb shot"><img src="thumbs/relocateme.png" alt="RelocateMe preview" loading="lazy" /></div>
           <div class="project-path">./projects/relocateme/</div>
           <div class="project-name">RelocateMe</div>
           <div class="project-desc">Full-stack relocation platform with two audience experiences — a global English site and a dedicated Hebrew section for Israelis. Features an interactive amCharts world map, cost of living calculator, 9 country profiles with radar charts, and in-depth guides. Secured with Cognito auth, serverless AWS backend, deployed on Netlify.</div>
@@ -512,100 +538,127 @@
         </div>
 
         <div class="project-card">
-          <div class="project-path">./projects/finance-pipeline/</div>
-          <div class="project-name">Finance Video Pipeline</div>
-          <div class="project-desc">Fully automated pipeline that picks a finance topic, writes a script via Claude, generates voiceover, renders charts, assembles an MP4, and publishes to YouTube — ~$0.08 per video</div>
+          <div class="project-thumb"><img src="thumbs/keshava.svg" alt="Keshava preview" loading="lazy" /></div>
+          <div class="project-path">./projects/keshava/</div>
+          <div class="project-name">Keshava</div>
+          <div class="project-desc">Task manager &amp; calendar app with auth, notes, and a system monitor — installable as a PWA</div>
           <div class="project-stack">
-            <span class="stack-tag">AWS Step Functions</span>
-            <span class="stack-tag">Bedrock</span>
-            <span class="stack-tag">Lambda</span>
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">React</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/kids-pipeline/</div>
-          <div class="project-name">Kids Video Pipeline</div>
-          <div class="project-desc">Automated kids content pipeline — Claude generates character-consistent scripts and scene descriptions, Gemini Imagen 4 renders portrait visuals, Polly narrates with Ivy voice, Ken Burns animations add motion, and background music is mixed in. Outputs TikTok/Instagram (portrait) + YouTube (landscape) simultaneously.</div>
-          <div class="project-stack">
-            <span class="stack-tag">AWS Step Functions</span>
-            <span class="stack-tag">Bedrock</span>
-            <span class="stack-tag">Lambda</span>
-            <span class="stack-tag">Gemini Imagen</span>
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">React</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/atbot/</div>
-          <div class="project-name">aTBOT</div>
-          <div class="project-desc">Triangular arbitrage bot scanning KuCoin, Gate.io, BitMart & Binance for cross-exchange price gaps — with a Flask dashboard, SQLite trade log, and paper/live mode toggle</div>
-          <div class="project-stack">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">Flask</span>
-            <span class="stack-tag">SQLite</span>
-            <span class="stack-tag">AWS EC2</span>
-            <span class="stack-tag">PM2</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/polymarket-bot/</div>
-          <div class="project-name">PolyMarket Bot</div>
-          <div class="project-desc">Automated copy-trading bot for Polymarket — scans leaderboard, tracks top traders' positions, and mirrors their trades via the CLOB API</div>
-          <div class="project-stack">
-            <span class="stack-tag">TypeScript</span>
-            <span class="stack-tag">Node.js</span>
-            <span class="stack-tag">viem</span>
-            <span class="stack-tag">AWS EC2</span>
-            <span class="stack-tag">PM2</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/multisocial/</div>
-          <div class="project-name">MultiSocial</div>
-          <div class="project-desc">Social media management dashboard with post scheduling, draft & approval workflow, analytics, and calendar view</div>
-          <div class="project-stack">
-            <span class="stack-tag">Next.js</span>
-            <span class="stack-tag">TypeScript</span>
-            <span class="stack-tag">Supabase</span>
-            <span class="stack-tag">Tailwind</span>
-            <span class="stack-tag">Twitter API</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-path">./projects/pawhaus-store/</div>
-          <div class="project-name">PAWHAUS</div>
-          <div class="project-desc">Premium pet accessories e-commerce storefront — editorial layout with product collections, smooth scroll, and a polished warm-toned design system</div>
-          <div class="project-stack">
-            <span class="stack-tag">HTML/CSS</span>
             <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">HTML/CSS</span>
+            <span class="stack-tag">Firebase</span>
+            <span class="stack-tag">PWA</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/108mason/todo-list" target="_blank" class="proj-link">github</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/balaram.svg" alt="Balaram preview" loading="lazy" /></div>
+          <div class="project-path">./projects/balaram/</div>
+          <div class="project-name">Balaram</div>
+          <div class="project-desc">Private full-stack personal dashboard built with AWS Amplify — tracks expenses, investments, costs, ideas, and life goals in one place. Secured with Cognito auth, backed by DynamoDB with PITR enabled, and hosted on S3.</div>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">AWS Amplify</span>
+            <span class="stack-tag">DynamoDB</span>
+            <span class="stack-tag">Cognito</span>
+            <span class="stack-tag">S3</span>
           </div>
           <div class="project-links">
             <a href="#" class="proj-link">github</a>
           </div>
         </div>
 
+        </div>
+      </div>
+
+      <div class="project-category">
+        <div class="category-head">
+          <span class="category-name">developer tools</span>
+          <span class="category-count">4</span>
+        </div>
+        <div class="projects-grid">
+
         <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/codesync.svg" alt="CodeSync preview" loading="lazy" /></div>
+          <div class="project-path">./projects/codesync/</div>
+          <div class="project-name">CodeSync</div>
+          <div class="project-desc">Real-time collaborative code editor with WebSocket sync</div>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Socket.io</span>
+            <span class="stack-tag">Monaco</span>
+            <span class="stack-tag">Redis</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+            <a href="#" class="proj-link">live</a>
+            <span class="proj-stars">342</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/devflow.svg" alt="DevFlow preview" loading="lazy" /></div>
+          <div class="project-path">./projects/devflow/</div>
+          <div class="project-name">DevFlow</div>
+          <div class="project-desc">CLI toolkit for automating repetitive dev tasks</div>
+          <div class="project-stack">
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Commander.js</span>
+            <span class="stack-tag">Shell</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+            <a href="#" class="proj-link">npm</a>
+            <span class="proj-stars">128</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/commitgpt.svg" alt="CommitGPT preview" loading="lazy" /></div>
+          <div class="project-path">./projects/commitgpt/</div>
+          <div class="project-name">CommitGPT</div>
+          <div class="project-desc">AI that writes your commit messages from diffs</div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">OpenAI</span>
+            <span class="stack-tag">Git hooks</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+            <span class="proj-stars">87</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/fullstack-automation.svg" alt="FullStack Automation preview" loading="lazy" /></div>
+          <div class="project-path">./projects/fullstack-automation/</div>
+          <div class="project-name">FullStack Automation</div>
+          <div class="project-desc">Modular test automation framework covering web, mobile, desktop, API, and DB — with reporting, visual testing, and CI support</div>
+          <div class="project-stack">
+            <span class="stack-tag">Java</span>
+            <span class="stack-tag">Selenium</span>
+            <span class="stack-tag">Appium</span>
+            <span class="stack-tag">TestNG</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/108mason/FullStackAutomationProject" target="_blank" class="proj-link">github</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="project-category">
+        <div class="category-head">
+          <span class="category-name">scrapers · monitors</span>
+          <span class="category-count">3</span>
+        </div>
+        <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/real-estate-monitor.svg" alt="Real Estate Monitor preview" loading="lazy" /></div>
           <div class="project-path">./projects/real-estate-monitor/</div>
           <div class="project-name">Real Estate Monitor</div>
           <div class="project-desc">Scrapes real estate listing sites with Playwright, detects new listings in real-time, and stores results in Firebase Firestore for a live dashboard. Useful for tracking fast-moving rental and property markets.</div>
@@ -621,6 +674,7 @@
         </div>
 
         <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/apartment-alert.svg" alt="ApartmentAlert preview" loading="lazy" /></div>
           <div class="project-path">./projects/apartment-alert/</div>
           <div class="project-name">ApartmentAlert</div>
           <div class="project-desc">Serverless apartment hunting tool — monitors inberlinwohnen.de hourly for new listings and fires an email alert via SNS the moment one appears. Fully automated deploy via bash script: Lambda + DynamoDB + EventBridge + IAM all provisioned in one shot.</div>
@@ -637,22 +691,7 @@
         </div>
 
         <div class="project-card">
-          <div class="project-path">./projects/balaram/</div>
-          <div class="project-name">Balaram</div>
-          <div class="project-desc">Private full-stack personal dashboard built with AWS Amplify — tracks expenses, investments, costs, ideas, and life goals in one place. Secured with Cognito auth, backed by DynamoDB with PITR enabled, and hosted on S3.</div>
-          <div class="project-stack">
-            <span class="stack-tag">React</span>
-            <span class="stack-tag">AWS Amplify</span>
-            <span class="stack-tag">DynamoDB</span>
-            <span class="stack-tag">Cognito</span>
-            <span class="stack-tag">S3</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="proj-link">github</a>
-          </div>
-        </div>
-
-        <div class="project-card">
+          <div class="project-thumb shot"><img src="thumbs/jobseeker.png" alt="JobSeeker preview" loading="lazy" /></div>
           <div class="project-path">./projects/jobseeker/</div>
           <div class="project-name">JobSeeker</div>
           <div class="project-desc">Automated job feed that scrapes listings daily, scores them, and delivers a digest — secured with Cognito auth</div>
@@ -668,6 +707,47 @@
             <a href="https://108mason.github.io/ToolBox/" target="_blank" class="proj-link">live</a>
           </div>
         </div>
+
+        </div>
+      </div>
+
+      <div class="project-category">
+        <div class="category-head">
+          <span class="category-name">storefronts · web toys</span>
+          <span class="category-count">2</span>
+        </div>
+        <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/pawhaus-store.svg" alt="PAWHAUS preview" loading="lazy" /></div>
+          <div class="project-path">./projects/pawhaus-store/</div>
+          <div class="project-name">PAWHAUS</div>
+          <div class="project-desc">Premium pet accessories e-commerce storefront — editorial layout with product collections, smooth scroll, and a polished warm-toned design system</div>
+          <div class="project-stack">
+            <span class="stack-tag">HTML/CSS</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link">github</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb"><img src="thumbs/memegenerator.svg" alt="MemeGenerator preview" loading="lazy" /></div>
+          <div class="project-path">./projects/memegenerator/</div>
+          <div class="project-name">MemeGenerator</div>
+          <div class="project-desc">Generates memes with custom text overlaid on images</div>
+          <div class="project-stack">
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/108mason/memegenerator" target="_blank" class="proj-link">github</a>
+          </div>
+        </div>
+
+        </div>
+      </div>
 
       </div>
     </section>

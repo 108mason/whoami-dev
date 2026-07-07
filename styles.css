@@ -456,6 +456,42 @@ body {
 /* ----------------------------------------
    Projects Grid
    ---------------------------------------- */
+.projects-output {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+}
+
+.category-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 7px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.category-name {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.category-name::before {
+  content: "# ";
+  color: var(--green);
+}
+
+.category-count {
+  color: var(--text-dim);
+  font-size: 0.68rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1px 8px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -468,12 +504,42 @@ body {
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 20px;
+  overflow: hidden;
   transition: border-color 0.2s, transform 0.2s;
 }
 
 .project-card:hover {
   border-color: var(--cyan);
   transform: translateY(-2px);
+}
+
+.project-thumb {
+  margin: -20px -20px 14px;
+  aspect-ratio: 2 / 1;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* real screenshots: softened so they don't reveal too much, sharpen on hover */
+.project-thumb.shot img {
+  filter: blur(0.6px) saturate(1.05) brightness(0.92);
+}
+
+.project-card:hover .project-thumb img {
+  transform: scale(1.04);
+}
+
+.project-card:hover .project-thumb.shot img {
+  filter: blur(0) saturate(1.05) brightness(1);
 }
 
 .project-path {
