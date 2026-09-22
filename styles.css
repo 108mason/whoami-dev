@@ -473,6 +473,8 @@ body {
 }
 
 .category-name {
+  font-weight: 400;
+  margin: 0;
   color: var(--text-dim);
   font-size: 0.78rem;
   letter-spacing: 0.08em;
@@ -520,6 +522,7 @@ body {
 }
 
 .project-name {
+  margin-top: 0;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--cyan);
@@ -1021,4 +1024,18 @@ body {
   .project-card { padding: 16px; }
 
   .output { padding-left: 8px; }
+}
+
+/* Visually hidden: available to screen readers and crawlers, invisible on screen */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }

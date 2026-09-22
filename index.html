@@ -60,11 +60,12 @@
 
     <!-- ===== HERO / WHOAMI ===== -->
     <section class="block" id="hero">
+      <h1 class="sr-only">Daniel Mason — Full-Stack Developer &amp; AWS Cloud Engineer</h1>
       <div class="prompt-line">
         <span class="prompt">guest@portfolio:~$</span>
         <span class="cmd-text typed" data-text="whoami"></span>
       </div>
-      <div class="output ascii-art">
+      <div class="output ascii-art" aria-hidden="true">
 <pre>
   ██████╗  █████╗ ███╗   ██╗██╗███████╗██╗
   ██╔══██╗██╔══██╗████╗  ██║██║██╔════╝██║
@@ -92,6 +93,7 @@
 
     <!-- ===== ABOUT ===== -->
     <section class="block" id="about">
+      <h2 class="sr-only">About</h2>
       <div class="prompt-line">
         <span class="prompt">guest@portfolio:~$</span>
         <span class="cmd-text typed" data-text="cat about.json"></span>
@@ -119,6 +121,7 @@
 
     <!-- ===== SKILLS ===== -->
     <section class="block" id="skills">
+      <h2 class="sr-only">Skills</h2>
       <div class="prompt-line">
         <span class="prompt">guest@portfolio:~$</span>
         <span class="cmd-text typed" data-text="ls -la skills/"></span>
@@ -195,6 +198,7 @@
 
     <!-- ===== EXPERIENCE ===== -->
     <section class="block" id="experience">
+      <h2 class="sr-only">Experience</h2>
       <div class="prompt-line">
         <span class="prompt">guest@portfolio:~$</span>
         <span class="cmd-text typed" data-text="git log --experience --pretty=detailed"></span>
@@ -297,6 +301,7 @@
 
     <!-- ===== EDUCATION & CERTS ===== -->
     <section class="block" id="education">
+      <h2 class="sr-only">Education</h2>
       <div class="prompt-line">
         <span class="prompt">guest@portfolio:~$</span>
         <span class="cmd-text typed" data-text="cat education.md"></span>
@@ -367,6 +372,7 @@
 
     <!-- ===== PROJECTS ===== -->
     <section class="block" id="projects">
+      <h2 class="sr-only">Projects</h2>
       <div class="prompt-line">
         <span class="prompt">guest@portfolio:~$</span>
         <span class="cmd-text typed" data-text="find ./projects -type f -name '*.cool'"></span>
@@ -375,14 +381,14 @@
 
       <div class="project-category">
         <div class="category-head">
-          <span class="category-name">shipped · live products</span>
+          <h3 class="category-name">shipped · live products</h3>
           <span class="category-count">2</span>
         </div>
         <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-path">./projects/relocatelab/</div>
-          <div class="project-name">RelocateLab</div>
+          <h4 class="project-name">RelocateLab</h4>
           <div class="project-desc">Relocation research platform serving three audience tracks (US, UK, Israel) — an interactive amCharts world map, a cost-of-living and salary calculator, country comparison grids, destination profiles and long-form guides. Paid country packs sell through Gumroad and unlock with a license key verified server-side by a Netlify function, so report content never ships to an unverified browser.</div>
           <div class="project-stack">
             <span class="stack-tag">JavaScript</span>
@@ -398,7 +404,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/firedupskills/</div>
-          <div class="project-name">FiredUpSkills</div>
+          <h4 class="project-name">FiredUpSkills</h4>
           <div class="project-desc">A catalog of 48 AI business launch kits — each one a step-by-step playbook with prompts and templates for standing up a single business model, sold as a one-time purchase rather than a course. Kits unlock with a Gumroad license key checked server-side, and catalog pages and marketing copy generate from one shared data layer instead of being hand-written per kit.</div>
           <div class="project-stack">
             <span class="stack-tag">JavaScript</span>
@@ -417,14 +423,14 @@
 
       <div class="project-category">
         <div class="category-head">
-          <span class="category-name">ai · content automation</span>
+          <h3 class="category-name">ai · content automation</h3>
           <span class="category-count">8</span>
         </div>
         <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-path">./projects/narrify/</div>
-          <div class="project-name">Narrify</div>
+          <h4 class="project-name">Narrify</h4>
           <div class="project-desc">Reddit → YouTube automation pipeline — scrapes viral posts, scores them with AI, generates cinematic scripts via Claude, voices with ElevenLabs, and publishes to YouTube, TikTok &amp; Instagram</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
@@ -440,7 +446,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/blogengine/</div>
-          <div class="project-name">BlogEngine</div>
+          <h4 class="project-name">BlogEngine</h4>
           <div class="project-desc">Zero-cost automated blog — GitHub Actions fetches RSS feeds, scores articles by relevance, and uses Claude to generate full posts, committing directly to GitHub Pages</div>
           <div class="project-stack">
             <span class="stack-tag">Node.js</span>
@@ -455,7 +461,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/finance-pipeline/</div>
-          <div class="project-name">Finance Video Pipeline</div>
+          <h4 class="project-name">Finance Video Pipeline</h4>
           <div class="project-desc">Fully automated pipeline that picks a finance topic, writes a script via Claude, generates voiceover, renders charts, assembles an MP4, and publishes to YouTube — ~$0.08 per video</div>
           <div class="project-stack">
             <span class="stack-tag">AWS Step Functions</span>
@@ -471,7 +477,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/kids-pipeline/</div>
-          <div class="project-name">Kids Video Pipeline</div>
+          <h4 class="project-name">Kids Video Pipeline</h4>
           <div class="project-desc">Automated kids content pipeline — Claude generates character-consistent scripts and scene descriptions, Gemini Imagen 4 renders portrait visuals, Polly narrates with Ivy voice, Ken Burns animations add motion, and background music is mixed in. Outputs TikTok/Instagram (portrait) + YouTube (landscape) simultaneously.</div>
           <div class="project-stack">
             <span class="stack-tag">AWS Step Functions</span>
@@ -488,7 +494,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/multisocial/</div>
-          <div class="project-name">MultiSocial</div>
+          <h4 class="project-name">MultiSocial</h4>
           <div class="project-desc">Social media management dashboard with post scheduling, draft &amp; approval workflow, analytics, and calendar view</div>
           <div class="project-stack">
             <span class="stack-tag">Next.js</span>
@@ -505,7 +511,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/content-engine/</div>
-          <div class="project-name">Content Engine v2</div>
+          <h4 class="project-name">Content Engine v2</h4>
           <div class="project-desc">Source-repurposing engine — paste one transcript, article or thread and get a publish-ready bundle in the target brand&#39;s voice: YouTube package, LinkedIn post, Markdown blog, short-form script, X thread, thumbnail concepts and an Instagram carousel, plus a suggested posting schedule. Self-hosted on a Linux box behind Cloudflare Access.</div>
           <div class="project-stack">
             <span class="stack-tag">Node.js</span>
@@ -520,7 +526,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/marketing-director/</div>
-          <div class="project-name">Marketing Director</div>
+          <h4 class="project-name">Marketing Director</h4>
           <div class="project-desc">An agentic head of marketing — scans the web for what is worth saying, has Claude pick the day&#39;s posts against a real content strategy and posting mix, then POSTs briefs to Content Engine&#39;s repurpose API for approval. The decide-what-to-say layer above the generator.</div>
           <div class="project-stack">
             <span class="stack-tag">Node.js</span>
@@ -534,7 +540,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/loom/</div>
-          <div class="project-name">Loom</div>
+          <h4 class="project-name">Loom</h4>
           <div class="project-desc">Local research correlation engine — feed it text, links, documents and video transcripts and it correlates, classifies, infers and verifies that material against themes you define. Nothing leaves the machine but the model calls, and everything it stores keeps its source and its dates.</div>
           <div class="project-stack">
             <span class="stack-tag">Node.js</span>
@@ -550,14 +556,14 @@
 
       <div class="project-category">
         <div class="category-head">
-          <span class="category-name">trading · arbitrage bots</span>
+          <h3 class="category-name">trading · arbitrage bots</h3>
           <span class="category-count">5</span>
         </div>
         <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-path">./projects/atbot/</div>
-          <div class="project-name">aTBOT</div>
+          <h4 class="project-name">aTBOT</h4>
           <div class="project-desc">Triangular arbitrage bot scanning KuCoin, Gate.io, BitMart &amp; Binance for cross-exchange price gaps — with a Flask dashboard, SQLite trade log, and paper/live mode toggle</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
@@ -573,7 +579,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/polymarket-bot/</div>
-          <div class="project-name">PolyMarket Bot</div>
+          <h4 class="project-name">PolyMarket Bot</h4>
           <div class="project-desc">Automated copy-trading bot for Polymarket — scans leaderboard, tracks top traders' positions, and mirrors their trades via the CLOB API</div>
           <div class="project-stack">
             <span class="stack-tag">TypeScript</span>
@@ -589,7 +595,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/flipflop/</div>
-          <div class="project-name">FlipFlop</div>
+          <h4 class="project-name">FlipFlop</h4>
           <div class="project-desc">Mobile-first resale arbitrage dashboard — scrapes Kleinanzeigen listings, compares against eBay sold prices, ranks deals by profit score, and fires Telegram alerts on hot finds</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
@@ -606,7 +612,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/pincer/</div>
-          <div class="project-name">Pincer</div>
+          <h4 class="project-name">Pincer</h4>
           <div class="project-desc">Non-custodial liquidity manager for a PancakeSwap v3 concentrated-liquidity position on BSC — compounds fees back into the position once they clear a threshold and re-centres the range when price drifts out of it. Defaults to a no-broadcast dry-run; signing is opt-in.</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
@@ -622,7 +628,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/maxhq/</div>
-          <div class="project-name">Max HQ</div>
+          <h4 class="project-name">Max HQ</h4>
           <div class="project-desc">Trading and inventory console — open positions, closed trades, tracked traders, copy-trade and insider tabs, market blacklist, budget bar and a live activity log, served as a single-page app from S3 behind CloudFront.</div>
           <div class="project-stack">
             <span class="stack-tag">React 18</span>
@@ -640,14 +646,14 @@
 
       <div class="project-category">
         <div class="category-head">
-          <span class="category-name">full-stack web apps</span>
+          <h3 class="category-name">full-stack web apps</h3>
           <span class="category-count">6</span>
         </div>
         <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-path">./projects/keshava/</div>
-          <div class="project-name">Keshava</div>
+          <h4 class="project-name">Keshava</h4>
           <div class="project-desc">Task manager &amp; calendar app with auth, notes, and a system monitor — installable as a PWA</div>
           <div class="project-stack">
             <span class="stack-tag">JavaScript</span>
@@ -662,7 +668,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/balaram/</div>
-          <div class="project-name">Balaram</div>
+          <h4 class="project-name">Balaram</h4>
           <div class="project-desc">Private full-stack personal dashboard built with AWS Amplify — tracks expenses, investments, costs, ideas, and life goals in one place. Secured with Cognito auth, backed by DynamoDB with PITR enabled, and hosted on S3.</div>
           <div class="project-stack">
             <span class="stack-tag">React</span>
@@ -679,7 +685,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/e2-visa/</div>
-          <div class="project-name">E-2 Visa Intelligence</div>
+          <h4 class="project-name">E-2 Visa Intelligence</h4>
           <div class="project-desc">Planning platform for a US business acquisition and the E-2 visa case behind it — grades candidate deals against the actual E-2 criteria instead of inventing an approval percentage, and carries a growing series of per-business-type build playbooks. Runs behind Cloudflare Access.</div>
           <div class="project-stack">
             <span class="stack-tag">Next.js 15</span>
@@ -696,7 +702,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/tradeflow/</div>
-          <div class="project-name">TradeFlow Digital</div>
+          <h4 class="project-name">TradeFlow Digital</h4>
           <div class="project-desc">Website and lead-generation business for trades and local service firms — a marketing site plus an OpenStreetMap/Places lead scout with a human review queue, an onboarding flow that provisions each paying client their own Cloudflare D1 database, and generated pitch demos for named prospects.</div>
           <div class="project-stack">
             <span class="stack-tag">JavaScript</span>
@@ -712,7 +718,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/copperops/</div>
-          <div class="project-name">CopperOps CRM</div>
+          <h4 class="project-name">CopperOps CRM</h4>
           <div class="project-desc">An operations dashboard rather than a landing page — runs a copper-cable sourcing pipeline end to end: suppliers, purchases, follow-ups and inventory, with a separate outreach worker alongside the app.</div>
           <div class="project-stack">
             <span class="stack-tag">React 19</span>
@@ -728,7 +734,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/marketopshub/</div>
-          <div class="project-name">MarketOpsHub</div>
+          <h4 class="project-name">MarketOpsHub</h4>
           <div class="project-desc">Multi-project marketing operations hub — runs launches, funnel audits, campaign generation and content planning across several brands from a single console.</div>
           <div class="project-stack">
             <span class="stack-tag">React</span>
@@ -745,14 +751,14 @@
 
       <div class="project-category">
         <div class="category-head">
-          <span class="category-name">developer tools</span>
+          <h3 class="category-name">developer tools</h3>
           <span class="category-count">5</span>
         </div>
         <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-path">./projects/codesync/</div>
-          <div class="project-name">CodeSync</div>
+          <h4 class="project-name">CodeSync</h4>
           <div class="project-desc">Real-time collaborative code editor with WebSocket sync</div>
           <div class="project-stack">
             <span class="stack-tag">React</span>
@@ -767,7 +773,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/devflow/</div>
-          <div class="project-name">DevFlow</div>
+          <h4 class="project-name">DevFlow</h4>
           <div class="project-desc">CLI toolkit for automating repetitive dev tasks</div>
           <div class="project-stack">
             <span class="stack-tag">Node.js</span>
@@ -781,7 +787,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/commitgpt/</div>
-          <div class="project-name">CommitGPT</div>
+          <h4 class="project-name">CommitGPT</h4>
           <div class="project-desc">AI that writes your commit messages from diffs</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
@@ -795,7 +801,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/fullstack-automation/</div>
-          <div class="project-name">FullStack Automation</div>
+          <h4 class="project-name">FullStack Automation</h4>
           <div class="project-desc">Modular test automation framework covering web, mobile, desktop, API, and DB — with reporting, visual testing, and CI support</div>
           <div class="project-stack">
             <span class="stack-tag">Java</span>
@@ -811,7 +817,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/reeldesk/</div>
-          <div class="project-name">ReelDesk</div>
+          <h4 class="project-name">ReelDesk</h4>
           <div class="project-desc">Local reel library — drains a Brave bookmark folder into a categorised, de-duplicated video desk and syncs the result into Obsidian. Built because bookmark folders are where good references go to die.</div>
           <div class="project-stack">
             <span class="stack-tag">JavaScript</span>
@@ -827,14 +833,14 @@
 
       <div class="project-category">
         <div class="category-head">
-          <span class="category-name">3d · fabrication</span>
+          <h3 class="category-name">3d · fabrication</h3>
           <span class="category-count">2</span>
         </div>
         <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-path">./projects/flexi-forge/</div>
-          <div class="project-name">flexi-forge</div>
+          <h4 class="project-name">flexi-forge</h4>
           <div class="project-desc">Turns a solid mesh into a print-in-place articulated STL — separate interlocking parts, captive twist joints, a flat base and no supports. Automates the Blender step print studios do by hand, without Blender: photo in, printable articulated figure out.</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
@@ -850,7 +856,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/3d-human-model/</div>
-          <div class="project-name">3D Human Model</div>
+          <h4 class="project-name">3D Human Model</h4>
           <div class="project-desc">Prototype storefront flow for photo-to-figurine — five screens from landing through upload, generating, ready and checkout, with sample 3MF output.</div>
           <div class="project-stack">
             <span class="stack-tag">HTML/CSS</span>
@@ -867,14 +873,14 @@
 
       <div class="project-category">
         <div class="category-head">
-          <span class="category-name">scrapers · monitors</span>
+          <h3 class="category-name">scrapers · monitors</h3>
           <span class="category-count">3</span>
         </div>
         <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-path">./projects/real-estate-monitor/</div>
-          <div class="project-name">Real Estate Monitor</div>
+          <h4 class="project-name">Real Estate Monitor</h4>
           <div class="project-desc">Scrapes real estate listing sites with Playwright, detects new listings in real-time, and stores results in Firebase Firestore for a live dashboard. Useful for tracking fast-moving rental and property markets.</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
@@ -889,7 +895,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/apartment-alert/</div>
-          <div class="project-name">ApartmentAlert</div>
+          <h4 class="project-name">ApartmentAlert</h4>
           <div class="project-desc">Serverless apartment hunting tool — monitors inberlinwohnen.de hourly for new listings and fires an email alert via SNS the moment one appears. Fully automated deploy via bash script: Lambda + DynamoDB + EventBridge + IAM all provisioned in one shot.</div>
           <div class="project-stack">
             <span class="stack-tag">Python</span>
@@ -905,7 +911,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/jobseeker/</div>
-          <div class="project-name">JobSeeker</div>
+          <h4 class="project-name">JobSeeker</h4>
           <div class="project-desc">Automated job feed that scrapes listings daily, scores them, and delivers a digest — secured with Cognito auth</div>
           <div class="project-stack">
             <span class="stack-tag">React</span>
@@ -924,14 +930,14 @@
 
       <div class="project-category">
         <div class="category-head">
-          <span class="category-name">storefronts · web toys</span>
+          <h3 class="category-name">storefronts · web toys</h3>
           <span class="category-count">2</span>
         </div>
         <div class="projects-grid">
 
         <div class="project-card">
           <div class="project-path">./projects/pawhaus-store/</div>
-          <div class="project-name">PAWHAUS</div>
+          <h4 class="project-name">PAWHAUS</h4>
           <div class="project-desc">Premium pet accessories e-commerce storefront — editorial layout with product collections, smooth scroll, and a polished warm-toned design system</div>
           <div class="project-stack">
             <span class="stack-tag">HTML/CSS</span>
@@ -944,7 +950,7 @@
 
         <div class="project-card">
           <div class="project-path">./projects/memegenerator/</div>
-          <div class="project-name">MemeGenerator</div>
+          <h4 class="project-name">MemeGenerator</h4>
           <div class="project-desc">Generates memes with custom text overlaid on images</div>
           <div class="project-stack">
             <span class="stack-tag">JavaScript</span>
@@ -964,6 +970,7 @@
 
     <!-- ===== CONTACT ===== -->
     <section class="block" id="contact">
+      <h2 class="sr-only">Contact</h2>
       <div class="prompt-line">
         <span class="prompt">guest@portfolio:~$</span>
         <span class="cmd-text typed" data-text="mail -s 'hello' you@dev.com"></span>
